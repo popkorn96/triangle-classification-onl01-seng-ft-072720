@@ -13,7 +13,7 @@ class Triangle
     a.positive? && b.positive? && c.positive?
   end
   
-  def triangle_ex2
+  def valid?
     a + b > c && a + c = b && b + c = a
   end 
   
