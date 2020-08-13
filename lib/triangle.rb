@@ -10,7 +10,11 @@ class Triangle
   #Further, each side must be larger than 0.
   
   def triangle_ex
-    a.positive? && b.positive? && c.positive?
+    if a.positive? && b.positive? && c.positive?
+      true
+    else
+      false
+    end
   end
   
   def valid?
