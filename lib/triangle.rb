@@ -30,7 +30,7 @@ class Triangle
       begin
       raise TriangleError.new 
       rescue TriangleError => error
-      puts self.send
+      puts self:TriangleError
     end
     end
   end
