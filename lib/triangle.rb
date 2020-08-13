@@ -27,8 +27,7 @@ class Triangle
     elsif  a == b || a ==c || b == c
       :isosceles
     else 
-      raise TriangleError<StandardError
-    end
+      raise TriangleError
     end
   end
   
