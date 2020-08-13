@@ -17,10 +17,17 @@ class Triangle
     a + b > c && a + c = b && b + c = a
   end 
   
+  def equilateral?
+    a == b && a == c && b == c
+  end
+  def scalene? 
+    a != b && a != c && b != c
+  end
+    
   def kind 
     if triangle_ex1 == true && triangle_ex2 == true 
       puts true
-    elsif a == b && a == c && b == c
+    elsif equilateral?
       :equilateral
     elsif a != b && a != c && b != c
       :scalene
