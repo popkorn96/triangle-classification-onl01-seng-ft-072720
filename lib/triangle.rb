@@ -27,10 +27,7 @@ class Triangle
     elsif  a == b || a ==c || b == c
       :isosceles
     else 
-      begin
-      raise TriangleError.new 
-      rescue TriangleError => error
-      puts self:TriangleError
+      raise TriangleError<StandardError
     end
     end
   end
