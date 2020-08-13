@@ -34,9 +34,7 @@ class Triangle
     a == b || a ==c || b == c
   end
   def kind 
-    if (triangle_ex == true || valid? == true)
-      puts true
-    else 
+    if (triangle_ex == false || valid? == false)
       raise TriangleError
     end
     if equilateral?
