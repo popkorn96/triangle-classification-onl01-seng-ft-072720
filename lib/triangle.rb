@@ -14,6 +14,7 @@ class Triangle
       true
     else
       false
+    end
   end
   
   def valid?
