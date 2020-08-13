@@ -23,15 +23,17 @@ class Triangle
   def scalene? 
     a != b && a != c && b != c
   end
-    
+  def isosceles?
+    a == b || a ==c || b == c
+  end
   def kind 
     if triangle_ex1 == true && triangle_ex2 == true 
       puts true
     elsif equilateral?
       :equilateral
-    elsif a != b && a != c && b != c
+    elsif scalene?
       :scalene
-    elsif  a == b || a ==c || b == c
+    elsif isosceles?
       :isosceles
     else false
       raise TriangleError
