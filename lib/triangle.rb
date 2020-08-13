@@ -14,7 +14,9 @@ class Triangle
   end
   
   def valid?
-    (a + b > c) && (a + c = b) && (b + c = a)
+    if true (a + b > c) && (a + c = b) && (b + c = a)
+    else 
+      false
   end 
   
   def equilateral?
