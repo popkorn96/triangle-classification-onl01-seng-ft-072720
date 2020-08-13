@@ -27,16 +27,19 @@ class Triangle
     a == b || a ==c || b == c
   end
   def kind 
-    if triangle_ex1 == true && triangle_ex2 == true 
+    if triangle_ex1 == true || triangle_ex2 == true 
       puts true
-    elsif equilateral?
+    else 
+      raise TriangleError
+    end
+    if equilateral?
       :equilateral
     elsif scalene?
       :scalene
     elsif isosceles?
       :isosceles
     else false
-      raise TriangleError
+     
     end
   end
   
