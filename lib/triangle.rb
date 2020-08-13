@@ -31,6 +31,7 @@ class Triangle
       raise TriangleError.new 
       rescue TriangleError => error
     end
+    end
   end
   
 
