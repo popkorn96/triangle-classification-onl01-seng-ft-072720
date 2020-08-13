@@ -5,10 +5,7 @@ class Triangle
     @b = b 
     @c = c
   end
-  
-  #The sum of the lengths of any two sides of a triangle always exceeds the length of the third side. This is a principle known as the triangle inequality.
-  #Further, each side must be larger than 0.
-  
+
   def triangle_ex
     if a.positive? && b.positive? && c.positive?
       true
@@ -47,11 +44,7 @@ class Triangle
     end
   end
   
-
-  
   class TriangleError < StandardError
   end
-
-
 end
 
