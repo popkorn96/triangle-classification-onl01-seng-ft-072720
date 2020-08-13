@@ -26,7 +26,7 @@ class Triangle
       :scalene
     elsif  a == b || a ==c || b == c
       :isosceles
-    else 
+    else false
       raise TriangleError
     end
   end
