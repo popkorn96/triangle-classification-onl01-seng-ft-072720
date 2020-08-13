@@ -14,7 +14,8 @@ class Triangle
   end
   
   def valid?
-    if true (a + b > c) && (a + c = b) && (b + c = a)
+    if (a + b > c) && (a + c = b) && (b + c = a)
+      true
     else 
       false
   end 
