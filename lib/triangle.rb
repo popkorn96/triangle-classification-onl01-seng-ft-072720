@@ -27,7 +27,7 @@ class Triangle
     a == b || a ==c || b == c
   end
   def kind 
-    if (triangle_ex1 == true || valid? == true)
+    if (triangle_ex == true || valid? == true)
       puts true
     else 
       raise TriangleError
