@@ -20,7 +20,7 @@ class Triangle
   def kind 
     if triangle_ex1 == true && triangle_ex2 == true 
       puts true 
-    else 
+    elsif
       raise TriangleError 
     end
     if a == b && a == c && b == c
