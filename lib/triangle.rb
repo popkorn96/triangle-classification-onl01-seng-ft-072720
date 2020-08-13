@@ -9,12 +9,12 @@ class Triangle
   #The sum of the lengths of any two sides of a triangle always exceeds the length of the third side. This is a principle known as the triangle inequality.
   #Further, each side must be larger than 0.
   
-  def triangle_ex1
+  def triangle_ex
     a.positive? && b.positive? && c.positive?
   end
   
   def valid?
-    a + b > c && a + c = b && b + c = a
+    (a + b > c) && (a + c = b) && (b + c = a)
   end 
   
   def equilateral?
@@ -27,7 +27,7 @@ class Triangle
     a == b || a ==c || b == c
   end
   def kind 
-    if (triangle_ex1 == true || triangle_ex2 == true)
+    if (triangle_ex1 == true || valid? == true)
       puts true
     else 
       raise TriangleError
