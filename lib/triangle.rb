@@ -21,7 +21,7 @@ class Triangle
     if (a + b > c) && (a + c = b) && (b + c = a)
       true
     else 
-      false
+      raise TriangleError
     end
   end 
   
