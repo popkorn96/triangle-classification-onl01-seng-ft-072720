@@ -19,16 +19,14 @@ class Triangle
   
   def kind 
     if triangle_ex1 == true && triangle_ex2 == true 
-      puts true 
-    elsif
-      raise TriangleError 
-    end
-    if a == b && a == c && b == c
+      puts true
+    elsif a == b && a == c && b == c
       :equilateral
     elsif a != b && a != c && b != c
       :scalene
-    else a == b || a ==c || b == c
+    elsif  a == b || a ==c || b == c
       :isosceles
+    else raise TriangleError 
     end
   end
   
