@@ -14,14 +14,13 @@ class Triangle
       true
     else
       false
-    end
   end
   
   def valid?
     if (a + b > c) && (a + c = b) && (b + c = a)
       true
     else 
-      raise TriangleError
+      false
     end
   end 
   
