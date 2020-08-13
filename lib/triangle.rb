@@ -27,7 +27,7 @@ class Triangle
     a == b || a ==c || b == c
   end
   def kind 
-    if triangle_ex1 == true || triangle_ex2 == true 
+    if (triangle_ex1 == true || triangle_ex2 == true)
       puts true
     else 
       raise TriangleError
@@ -38,8 +38,6 @@ class Triangle
       :scalene
     elsif isosceles?
       :isosceles
-    else false
-     
     end
   end
   
